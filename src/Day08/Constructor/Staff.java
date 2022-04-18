@@ -1,21 +1,25 @@
 package Day08.Constructor;
-/*
-*  声明一个员工类，
+/**
+ * 声明一个员工类，
  * 包含属性：编号、姓名、薪资、性别，要求属性私有化，提供get/set，
  * 提供无参构造器和有参构造器
  * 提供getInfo()
-* */
+ */
 public class Staff {
-    private int num;//员工编号
-    private String name;//员工姓名
-    private double money;//员工工资
-    private String sex;//员工性别
+    private int num;        //员工编号
+    private String name;    //员工姓名
+    private double money;   //员工工资
+    private String sex;     //员工性别
 
-    //无参构造器
+    /**
+     * 无参构造器
+     */
     public Staff() {
     }
 
-    //有参构造器
+    /**
+     * 有参构造器
+     */
     public Staff(int num, String name, double money, String sex) {
         this.num = num;
         this.name = name;

@@ -1,10 +1,15 @@
 package Day06.Bank;
 
+/**
+ * @author 18124
+ */
 public class Account {
     private int id;//账号
     private double balance;//余额
     private double annualInterestRate;//年利率
-    //构造器
+    /**
+     * 构造器
+     */
     public Account(int id,double balance,double annualInterestRate) {
         this.id = id;
         this.balance = balance;
@@ -34,8 +39,10 @@ public class Account {
         this.annualInterestRate = annualInterestRate;
     }
 
-    //取款方法
-    //需要判断用户余额是否能够满足提款数额的要求，如果不能，应给出提示。
+    /**
+     * 取款方法
+     * 需要判断用户余额是否能够满足提款数额的要求，如果不能，应给出提示。
+     */
     public void withdraw(double amount) {
         if (balance < amount) {
             System.out.println("余额不足");

@@ -1,10 +1,15 @@
 package Day06.Bank;
 
+/**
+ * @author 18124
+ */
 public class Customer {
     private String firstName; //名字
     private String lastName;  //姓
     private Account account;  //账户
-    //构造器
+    /**
+     * 构造器
+     */
     public Customer(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
