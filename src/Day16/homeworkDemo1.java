@@ -1,6 +1,7 @@
 package Day16;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
@@ -26,5 +27,20 @@ public class homeworkDemo1 {
             }
         }
         System.out.println(list);
+        //遍历集合 增强for循环遍历
+        for (Integer it : list) {
+            System.out.print(it+" ");
+        }
+        System.out.println("");
+        //iterator迭代器遍历
+        Iterator<Integer> it = list.iterator();
+        while (it.hasNext()) {
+            System.out.print(it.next()+" ");
+        }
+        System.out.println(" ");
+        //普通for循环遍历
+        for (int i = 0; i < list.size(); i++) {
+            System.out.print(list.get(i)+" ");
+        }
     }
 }
