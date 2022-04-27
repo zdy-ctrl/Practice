@@ -24,5 +24,11 @@ public class homeworkDemo2 {
             }
         }
         System.out.println(set);
+        /*遍历集合*/
+        //增强for循环
+        for (Integer it : set) {
+            System.out.print(it+" ");
+        }
+        //
     }
 }
