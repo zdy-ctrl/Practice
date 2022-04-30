@@ -3,6 +3,7 @@ package Day17;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 /**
  * @title:
@@ -17,6 +18,7 @@ import java.util.Map;
  */
 public class MapDemo03 {
     public static void main(String[] args) {
+        /*HashMap*/
         HashMap<String, Double> HashMap = new HashMap<>();
         HashMap.put("张三", 98.5);
         HashMap.put("李四", 98.5);
@@ -26,7 +28,8 @@ public class MapDemo03 {
         for (String s : HashMap.keySet()) {
             System.out.println(s + "==" + HashMap.get(s));
         }
-
+        System.out.println("-------------------------------");
+        /*LinedHashMap*/
         LinkedHashMap<String, Integer> linkedHashMap = new LinkedHashMap<>();
         linkedHashMap.put("张三", 97);
         linkedHashMap.put("李四", 98);
@@ -36,6 +39,15 @@ public class MapDemo03 {
         for (Map.Entry<String, Integer> entry : linkedHashMap.entrySet()) {
             System.out.println(entry);
         }
-
+        System.out.println("-------------------------------");
+        /*TreeMap*/
+        TreeMap<String, Integer> treeMap = new TreeMap<>();
+        treeMap.put("张三", 12);
+        treeMap.put("王五", 14);
+        treeMap.put("李四", 13);
+        treeMap.put("null", null);
+        for (Map.Entry<String, Integer> entry : treeMap.entrySet()) {
+            System.out.println(entry);
+        }
     }
 }
