@@ -18,7 +18,7 @@ import java.util.Map;
  * 每一种Map内部有自己的Map.Entry的实现类。在Map中存储数据，实际上是将Key---->value的数据存储在Map.Entry接口的实例中，
  * 再在Map集合中插入Map.Entry的实例化对象
  */
-public class MapDemo2 {
+public class MapDemo02 {
     public static void main(String[] args) {
         /**Map集合遍历的4种方法*/
         Map<String, String> map = new HashMap<>();
