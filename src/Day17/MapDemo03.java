@@ -20,9 +20,9 @@ public class MapDemo03 {
     public static void main(String[] args) {
         /*HashMap*/
         HashMap<String, Double> HashMap = new HashMap<>();
-        HashMap.put("张三", 98.5);
-        HashMap.put("李四", 98.5);
-        HashMap.put("王五", 98.5);
+        HashMap.put("zzy", 98.5);
+        HashMap.put("xxb", 98.5);
+        HashMap.put("zll", 98.5);
         HashMap.put("null", null);
         /*集合遍历*/
         for (String s : HashMap.keySet()) {
@@ -40,7 +40,10 @@ public class MapDemo03 {
             System.out.println(entry);
         }
         System.out.println("-------------------------------");
-        /*TreeMap*/
+        /*TreeMap
+        * 底层红黑树：元素唯一，无序，但是实现了排序
+        * 如何实现元素唯一？前提元素必须可以比较大小
+        * */
         TreeMap<String, Integer> treeMap = new TreeMap<>();
         treeMap.put("张三", 12);
         treeMap.put("王五", 14);
