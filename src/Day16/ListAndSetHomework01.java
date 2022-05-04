@@ -45,10 +45,15 @@ public class ListAndSetHomework01 {
         Collections.shuffle(list);
         /*截取一段固定牌数给一个人*/
         int p = 11;
+        /**截取扑克牌集合中的子链作为发的牌*/
         List<String> list1 = list.subList(list.size() - p, list.size());
+        Collections.sort(list1); //给扑克牌排序
         List<String> list2 = list.subList(list.size() - 2 * p, list.size() - p);
+        Collections.sort(list2); //给扑克牌排序
         List<String> list3 = list.subList(list.size() - 3 * p, list.size() - 2 * p);
+        Collections.sort(list3); //给扑克牌排序
         List<String> list4 = list.subList(list.size() - 4 * p, list.size() - 3 * p);
+        Collections.sort(list4); //给扑克牌排序
         List<String> list5 = list.subList(0, list.size() - 4 * p);  //剩余牌数
         System.out.println("张三的牌："+list1);
         System.out.println("李四的牌："+list2);
